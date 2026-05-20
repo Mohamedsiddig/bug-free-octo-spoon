@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسبوع التكنولوجي الأول | كلية المجد للعلوم الطبية والتكنولوجيا</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-microchip"></i>
+                <span>الأسبوع التكنولوجي</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">عن الفعالية</a></li>
+                <li><a href="#workshops">الورش</a></li>
+                <li><a href="#lectures">المحاضرات</a></li>
+                <li><a href="#team">فريق العمل</a></li>
+                <li><a href="#organizers">اللجنة المنظمة</a></li>
+                <li><a href="#contact">تواصل</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- الصفحة الرئيسية -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">لأول مرة</div>
+            <h1>الأسبوع التكنولوجي الأول</h1>
+            <p class="hero-subtitle">حيث يلتقي الابتكار بالمعرفة وترسم ملامح المستقبل</p>
+            <div class="hero-date">
+                <i class="far fa-calendar-alt"></i>
+                <span>الخميس 21 مايو 2026م</span>
+                <i class="far fa-clock"></i>
+                <span> ابتدا من الساعة 09:00 صباحاً  </span>
+            </div>
+            <div class="hero-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>مبنى الكلية | كلية المجد الجامعية</span>
+            </div>
+            <button class="btn-primary" id="registerBtn">
+                <i class="fas fa-ticket-alt"></i> سجل حضورك الآن
+            </button>
+        </div>
+    </section>
+
+    <!-- عن الفعالية -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>عن الأسبوع التكنولوجي</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>ينشر طلاب برنامج تقانة المعلومات بدعوتكم لحضور فعاليات الأسبوع التكنولوجي الأول حيث يلتقي الابتكار بالمعرفة وترسم ملامح المستقبل.</p>
+                    <p class="quote">"تقانة المعلومات... عصب الحاضر وركيزة المستقبل، حيث تحيا الأكواد وتبنى الحضارات. بين الشغف والتقنية نصنع الفرق."</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">ورش عمل</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">متحدثين</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">مشارك</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الورش والفعاليات -->
+    <section id="workshops" class="workshops">
+        <div class="container">
+            <div class="section-header">
+                <h2>ورش العمل والفعاليات</h2>
+                <div class="header-line"></div>
+                <p>اكتشف المحتوى الثري الذي نقدمه في الأسبوع التكنولوجي الأول</p>
+            </div>
+            <div class="workshops-grid">
+                <!-- الشبكات -->
+                <div class="workshop-card" data-workshop="networking">
+                    <div class="card-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>ورشة الشبكات</h3>
+                    <p>تعلم أساسيات الشبكات، بروتوكولات الاتصال، وأمن المعلومات. ورشة تطبيقية مع خبراء في مجال الشبكات.</p>
+                    <div class="card-footer">
+                        <span class="workshop-time"><i class="far fa-clock"></i> 12:00 - 09:00</span>
+                        <button class="btn-details" onclick="showWorkshopDetails('networking')">التفاصيل</button>
+                    </div>
+                </div>
+
+                <!-- Software -->
+                <div class="workshop-card" data-workshop="software">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>ورشة الـ Software</h3>
+                    <p>تطوير التطبيقات، هندسة البرمجيات، وأحدث تقنيات البرمجة. ورشة تفاعلية للمبتدئين والمحترفين.</p>
+                    <div class="card-footer">
+                        <span class="workshop-time"><i class="far fa-clock"></i> 12:00 - 09:00</span>
+                        <button class="btn-details" onclick="showWorkshopDetails('software')">التفاصيل</button>
+                    </div>
+                </div>
+
+                <!-- Hardware -->
+                <div class="workshop-card" data-workshop="hardware">
+                    <div class="card-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>ورشة الـ Hardware</h3>
+                    <p>استكشف عالم العتاد الصلب، معالجات، وبناء الحاسوب. ورشة عملية مع قطع حقيقية.</p>
+                    <div class="card-footer">
+                        <span class="workshop-time"><i class="far fa-clock"></i> 12:00 - 09:00</span>
+                        <button class="btn-details" onclick="showWorkshopDetails('hardware')">التفاصيل</button>
+                    </div>
+                </div>
+
+                <!-- الحفل الثقافي -->
+                <div class="workshop-card" data-workshop="cultural">
+                    <div class="card-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>الحفل الثقافي</h3>
+                    <p>فقرات ثقافية وفنية</p>
+                    <div class="card-footer">
+                        <span class="workshop-time"><i class="far fa-clock"></i> 04:00 - 12:00</span>
+                        <button class="btn-details" onclick="showWorkshopDetails('cultural')">التفاصيل</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- المحاضرات التوعوية (محدثة) -->
+    <section id="lectures" class="lectures">
+        <div class="container">
+            <div class="section-header">
+                <h2>محاضرات توعوية</h2>
+                <div class="header-line"></div>
+                <p>محاضرات يقدمها طلاب تقانة المعلومات</p>
+            </div>
+            <div class="lectures-list">
+                <!-- المحاضرة 1 -->
+                <div class="lecture-item">
+                    <div class="lecture-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="lecture-content">
+                        <h4>تقانة المعلومات والتخصصات التي تندرج تحتها</h4>
+                        <p class="lecture-speaker">
+                            <i class="fas fa-user-graduate"></i> الطالب / إيهاب إبراهيم
+                        </p>
+                        <p>تعريف بتقانة المعلومات وأهم التخصصات التي تندرج تحتها مثل علوم الحاسوب، هندسة البرمجيات، نظم المعلومات، والأمن السيبراني.</p>
+                    </div>
+                </div>
+
+                <!-- المحاضرة 2 -->
+                <div class="lecture-item">
+                    <div class="lecture-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="lecture-content">
+                        <h4>أمن المعلومات كقسم من تقانة المعلومات وفوائده</h4>
+                        <p class="lecture-speaker">
+                            <i class="fas fa-user-graduate"></i> الطالب / أحمد الطيب | الطالبة / أسماء همام
+                        </p>
+                        <p>تعريف بأمن المعلومات كأحد أهم أقسام تقانة المعلومات، وفوائده في حماية البيانات والخصوصية في العصر الرقمي.</p>
+                    </div>
+                </div>
+
+                <!-- المحاضرة 3 -->
+                <div class="lecture-item">
+                    <div class="lecture-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <div class="lecture-content">
+                        <h4>الرقابة الأولوية في عصر التطور التكنولوجي وأثرها على الأبناء</h4>
+                        <p class="lecture-speaker">
+                            <i class="fas fa-user-graduate"></i> الطالبة / فاطمة طلال
+                        </p>
+                        <p>أهمية الرقابة الأسرية في ظل التطور التكنولوجي المتسارع، وكيفية حماية الأبناء من مخاطر الاستخدام المفرط للتكنولوجيا.</p>
+                    </div>
+                </div>
+
+                <!-- المحاضرة 4 -->
+                <div class="lecture-item">
+                    <div class="lecture-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <div class="lecture-content">
+                        <h4>تقنية البلوك شين (Blockchain)</h4>
+                        <p class="lecture-speaker">
+                            <i class="fas fa-user-graduate"></i> الطالبة / شهد عائد
+                        </p>
+                        <p>تعريف بتقنية البلوك شين، كيفية عملها، واستخداماتها في العملات الرقمية والعقود الذكية والقطاعات المختلفة.</p>
+                    </div>
+                </div>
+
+                <!-- المحاضرة 5 -->
+                <div class="lecture-item">
+                    <div class="lecture-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="lecture-content">
+                        <h4>الذكاء الاصطناعي (Artificial Intelligence)</h4>
+                        <p class="lecture-speaker">
+                            <i class="fas fa-user-graduate"></i> الطالبة / آمنة عبد الله
+                        </p>
+                        <p>مقدمة عن الذكاء الاصطناعي، أنواعه، تطبيقاته في الحياة اليومية، ومستقبل هذه التقنية الثورية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- فريق العمل (أعضاء الأقسام) -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>فريق العمل</h2>
+                <div class="header-line"></div>
+                <p>الطلاب المنظمون للفعالية والمشرفون على الأقسام</p>
+            </div>
+            <div class="team-tabs">
+                <button class="tab-btn active" onclick="filterTeam('all')">الكل</button>
+                <button class="tab-btn" onclick="filterTeam('networking')">شبكات</button>
+                <button class="tab-btn" onclick="filterTeam('software')">Software</button>
+                <button class="tab-btn" onclick="filterTeam('hardware')">Hardware</button>
+                <button class="tab-btn" onclick="filterTeam('cultural')">ثقافي</button>
+            </div>
+            <div class="team-grid" id="teamGrid">
+                <!-- سيتم تعبئتها من JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- اللجنة المنظمة -->
+    <section id="organizers" class="organizers">
+        <div class="container">
+            <div class="section-header">
+                <h2>اللجنة المنظمة</h2>
+                <div class="header-line"></div>
+                <p>قيادة الأسبوع التكنولوجي الأول</p>
+            </div>
+            <div class="organizers-grid" id="organizersGrid">
+                <!-- سيتم تعبئتها من JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- نموذج التسجيل -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>سجل حضورك الآن</h2>
+                <div class="header-line"></div>
+                <p>كن جزءاً من الحدث التكنولوجي الأهم</p>
+            </div>
+            <div class="contact-form">
+                <form id="registrationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> الاسم الكامل</label>
+                            <input type="text" id="regName" required placeholder="أدخل اسمك">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
+                            <input type="email" id="regEmail" required placeholder="example@domain.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fas fa-phone"></i> رقم الهاتف</label>
+                            <input type="tel" id="regPhone" required placeholder="09xxxxxxxx">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-graduation-cap"></i> الجهة / التخصص</label>
+                            <input type="text" id="regMajor" placeholder="تخصصك أو جهة عملك">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>الورشة المهتم بها</label>
+                        <select id="regWorkshop">
+                            <option value="networking">ورشة الشبكات</option>
+                            <option value="software">ورشة الـ Software</option>
+                            <option value="hardware">ورشة الـ Hardware</option>
+                            <option value="cultural">الحفل الثقافي</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-check-circle"></i> تأكيد التسجيل
+                    </button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>الموقع</h4>
+                        <p>مبنى كلية المجد</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>للاستفسارات</h4>
+                        <p>info@almajd.com<br>events@almajd.com</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-globe"></i>
+                        <h4>الموقع الإلكتروني</h4>
+                        <p>www.el-majd.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الموقع التفاعلي -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-microchip"></i>
+                    <h3>الأسبوع التكنولوجي الأول</h3>
+                    <p>كلية المجد للعلوم الطبية والتكنولوجيا</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#workshops">الورش</a></li>
+                        <li><a href="#lectures">المحاضرات</a></li>
+                        <li><a href="#team">فريق العمل</a></li>
+                        <li><a href="#contact">التسجيل</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>تابعنا</h4>
+                    <div class="social-icons">
+                        
+                        <a href="https://web.facebook.com/almajdhasahisa/?locale=ar_AR&_rdc=1&_rdr#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 الأسبوع التكنولوجي الأول - كلية المجد للعلوم الطبية والتكنولوجيا | تصميم طلاب تقانة المعلومات</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- نافذة منبثقة للتفاصيل -->
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
